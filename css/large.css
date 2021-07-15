@@ -1,0 +1,202 @@
+@media only screen and (min-width: 600px){
+    .navbar{
+        top: 0;
+        width:5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover{
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text{
+        display: inline;
+        transition: opacity 600ms ;
+    }
+
+    .partition{
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        margin: 20px 20px;
+    }
+
+   /*  ------HOME------ */
+
+    .home{
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .profilePicture{
+        grid-column: 2/ 3;
+        grid-row: 1/2;
+        min-width: 200px;
+        padding-top:20px;
+    }
+
+    .introduction{
+        grid-column: 3/ -1;
+        grid-row: 1/2;
+        width:100%;
+    }
+
+    .iconContainer{
+        display: inline-block;
+    }
+
+   /*  -------ABOUT ME------ */
+
+    .aboutMe{
+        display: grid;
+        grid-template-columns: 300px 1fr 1fr 1fr 100px;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .summary{
+        grid-column: 2/ -3;
+        grid-row: 1/2;
+    /*     border: 3px solid black;
+        border-radius: 10px; */
+        padding: 5px;
+    }
+
+    .pictureGrid{
+       grid-column: 4/5;
+       display: block;
+       column-count: 2;
+       column-gap: 20px;
+       width:100%;
+    }
+    .gridPicture img{
+        width:100%;
+        border-radius: 10px;
+    }
+
+    #picOne{
+        height: 300px;
+        width:100%;
+    }
+
+    #picTwo{
+        height:250px;
+        width: auto;
+    }
+
+    #picThree{
+        height:250px;
+        width: 100%;
+    }
+
+    #picFour{
+        height: 300px;
+        width:100%;
+    }
+
+/* ------------SKILL SET------- */
+
+.skillSet{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+}
+
+.skillSet h3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self:start;
+    align-self: end;
+}
+
+.icons{
+    grid-column: 2/-1;
+    grid-row:2/3;
+    display: flex;
+    justify-content: space-around;
+    justify-self: start;
+    width: 80%;
+    padding-top: 30px;
+/*     border: 3px solid black;
+    border-radius: 10px; */
+}
+
+/* ------------PROJECTS------- */
+
+.projectsContainer{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 20px;
+}
+
+.projectsContainer h3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self:start;
+    align-self: end;
+}
+
+.projectContainer{
+grid-column: 2/3;
+display: grid;
+grid-template-columns: 1fr 2fr;
+justify-self:start;
+align-self: end;
+/* border: 3px solid black;
+border-radius: 10px; */
+}
+
+.description{
+    justify-self: center;
+    align-self: center;
+}
+
+.projectContainer img{
+max-width: 300px;
+min-width: 200px;
+}
+
+
+/* ------------Contact------- */
+.contact{
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr 250px;
+    grid-gap: 20px;
+}
+
+.contact h3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.contact div{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.contact form{
+    display: block;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.contact form input{
+    padding: 10px;
+    margin: 5px auto;
+}
+
+
+
+
+
+}

@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1275px){
+    .pictureGrid{
+        display: none;
+    }
+
+    .aboutMe{
+        display: grid;
+        grid-template-columns: 300px 1fr 100px;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .summary{
+        grid-column: 2/ -1;
+        grid-row: 1/2;
+        padding: 5px;
+    }
+    
+}
